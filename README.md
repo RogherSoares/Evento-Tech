@@ -3,6 +3,9 @@
 ## **📌 Descrição do Projeto**
 Este projeto consiste no desenvolvimento de um website para divulgação de um evento de tecnologia, organizado pelo **GDG Londrina**, que ocorrerá no dia **24 de maio**. O objetivo do site é fornecer informações sobre o evento, programação, palestrantes e local, além de possibilitar a inscrição dos participantes.
 
+## **🎯 Objetivo do Site e Público-Alvo**  
+O site tem como objetivo principal **divulgar o evento de tecnologia organizado pelo GDG Londrina**, fornecendo informações sobre a programação, palestrantes e localização. Além disso, ele facilita a **inscrição dos participantes** por meio de um formulário interativo.
+
 ## **🗂 Estrutura do Projeto**
 O site será composto pelas seguintes páginas principais:
 - 🏠 **Home**: Apresentação do evento, banner principal e botão de inscrição.
@@ -27,6 +30,26 @@ A estrutura inicial de pastas e arquivos está organizada da seguinte maneira:
 │── inscricao.html
 │── README.md
 ```
+## **📌 Wireframes do Projeto**
+Os wireframes a seguir representam a estrutura básica das páginas do site, permitindo visualizar a organização do conteúdo antes da implementação.
+
+### **🏠 Home Page**
+<img src="img/pagina home - evento tech.png" alt="Pagina Home" width="800">
+
+### **📅 Programação**
+<img src="img/pagin programação - evento tech.png" alt="Pagina Programação" width="800">
+
+### **🎤 Palestrantes**
+<img src="img/pagina palestrantes - evento tech.png" alt="Pagina Palestrantes" width="800">
+
+### **📍 Localização**
+<img src="img/pagina de mapa - evento tech.png" alt="Pagina Mapa" width="800">
+
+### **📝 Inscrição**
+<img src="img/pagina de inscrição - evento tech.png" alt="Pagina Incrição" width="800">
+
+###  **📍 Localização**
+<img src="img/Mapa do site.png" alt="Mapa do Site" width="800">
 
 ## **🎨 Paleta de Cores e Fontes**
 
@@ -41,6 +64,11 @@ A estrutura inicial de pastas e arquivos está organizada da seguinte maneira:
 | ⚪ **Cinza Claro** | `#E0E0E0` | (224, 224, 224) | Fundos suaves e divisões |
 | ⚪ **Branco** | `#FFFFFF` | (255, 255, 255) | Texto e fundo principal |
 | 💚 **Verde Neon** | `#00FF7F` | (0, 255, 127) | Botões de chamada para ação ("Inscreva-se") |
+
+### A escolha dessas cores visa um design moderno e tecnológico. 
+- O **azul** representa inovação e tecnologia. 
+- O **roxo** traz sofisticação. 
+- O **verde neon** foi selecionado para destacar os botões de inscrição e incentivar ações.
 
 ### **🖋 Fontes Utilizadas:**
 - ✨ **Títulos e Destaques**: [Poppins](https://fonts.google.com/specimen/Poppins)  
@@ -59,6 +87,7 @@ A estrutura inicial de pastas e arquivos está organizada da seguinte maneira:
 - ⚡ **JavaScript** para funcionalidades interativas.
 - 🔗 **Git/GitHub** para controle de versão.
 - 📌 **Figma** para a criação do wireframe e planejamento visual.
+- 📝 **Trello** para gerenciamento de tarefas e organização do projeto.
 
 ## **📆 Próximos Passos**
 Com o planejamento definido, a próxima etapa será a implementação do layout inicial utilizando **HTML e CSS**.
@@ -66,6 +95,7 @@ Com o planejamento definido, a próxima etapa será a implementação do layout 
 ## **👨‍💻 Autores**
 ### Equipe responsável pelo desenvolvimento do projeto.
 - Rogher Adriano Soares
+- Kaio Schobiner
 
 ---
 Este documento será atualizado conforme o progresso do desenvolvimento do projeto. 🚀
