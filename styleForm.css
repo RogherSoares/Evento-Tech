@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(34, 34, 34);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Estilizando o Formulário */
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 32px;
+    height: 100%;
+}
+
+#formContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    height: 100%;
+    width: 33%;
+    background: rgba(224, 224, 224, 0.3);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 15px -3px rgba(255, 255, 255, 0.5);
+}
+
+.formTitulo {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 2.3rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    position: relative;
+}
+
+
+
+.btnCadastro {
+    background: rgb(0, 255, 127);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    border: none;
+    padding: 5px;
+    width: 30%;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    gap: 8px;
+    height: fit-content;
+    box-shadow: 2px 2px 3px  rgba(255, 255, 255, 0.3);
+}
+
+#inputContainer {
+    display: grid;
+    gap: 24px;
+}
+
+.formLabel {
+    font-family: 'Roboto';
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+
+.inputField {
+    display: flex;
+    align-items: center;
+    background-color: rgb(224, 224, 224);
+    border-radius: 8px;
+    box-shadow: 2px 2px 3px rgba(255, 255, 255, 0.3);
+}
+
+.inputField img {
+    display: flex;
+    align-items: center;
+    width: 30px;
+    height: 20px;
+    color: rgb(224, 224, 224);
+}
+.formControl {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Roboto';
+}
+.formControl:focus {
+    outline: none;
+}
+
+.inputBox .inputField:focus-within {
+    outline: 2px solid rgb(168, 85, 247);
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset !important;
+    color: rgb(0, 0, 0);
+}
+
+.radioContainer {
+    grid-column: span 2;
+}
+
+#genderInputs {
+    display: flex;
+    gap: 20px;
+}
+
+.radioBox {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.formControl[type="radio"] {
+    accent-color: rgb(168, 85, 247);
+}
+
+/* Estilizando o menu de navegação */
+.icones {
+    height: 25px;
+    width: 25px;
+    padding-right: 5px;
+}
+.itemMenu {
+    text-decoration: none;
+    font-family: 'Poppins';
+    color: rgb(255, 255, 255);
+}
+
+.header {
+    background: rgb(106, 13, 173);
+    padding-inline: 16px;
+}
+
+.menu {
+    max-width: 1280px;
+    height: 70px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.listaMenu {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+.listaMenu a {
+    font-size: 1.5rem;
+    padding-block: 16px;
+}
+
+.menuHamburguer {
+    border: none;
+    background: none;
+    border-top: 3px solid rgb(255, 255, 255);
+    cursor: pointer;
+    display: none;
+}
+.menuHamburguer::before,
+.menuHamburguer::after {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: rgb(255, 255, 255);
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
+}
+
+/* Responsividade*/
+@media (min-width: 280px) and (max-width: 880px) {
+    .menuHamburguer {
+        display: block;
+        z-index: 1;
+    }
+    .listaMenu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgb(106, 13, 173);
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+        clip-path: circle(100px at 90% -15%);
+        transition: 1s ease-out;
+        pointer-events: none;
+    }
+    .listaMenu a {
+        font-size: 3rem;
+        opacity: 0;
+    }
+    .listaMenu li:nth-child(1) a{
+        transition: 0.5s 0.2s;
+    }
+    .listaMenu li:nth-child(2) a{
+        transition: 0.5s 0.4s;
+    }
+    .listaMenu li:nth-child(3) a{
+        transition: 0.5s 0.6s;
+    }
+
+    .icones {
+        height: 35px;
+        width: 35px;
+        padding-right: 8px;
+    }
+    .menu.active .listaMenu {
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
+    }
+    .menu.active .listaMenu a {
+        opacity: 1;
+    }
+    .menu.active .menuHamburguer{
+        position: fixed;
+        top: 26px;
+        right: 16px;
+        border-top-color:transparent ;
+    }
+    .menu.active .menuHamburguer::before {
+        transform: rotate(135deg);
+    }
+    .menu.active .menuHamburguer::after {
+        transform: rotate(-135deg);
+        top: -7px;      
+    }
+    .menu.active + main {
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.3s ease-out;
+    }
+}
