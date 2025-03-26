@@ -64,15 +64,6 @@ html {
     transition: 0.3s;
 }
 
-/* Pagina Home (Index) */
-
-/* Pagina de Programação */
-
-/* Pagina de Palestrantes */
-
-/* Pagina de Localização */
-
-/* Pagina de Inscrição */
 
 /* Responsividade*/
 @media (min-width: 280px) and (max-width: 880px) {
@@ -96,7 +87,7 @@ html {
         pointer-events: none;
     }
     .listaMenu a {
-        font-size: 4rem;
+        font-size: 3rem;
         opacity: 0;
     }
     .listaMenu li:nth-child(1) a{
