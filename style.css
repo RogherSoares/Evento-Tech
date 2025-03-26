@@ -9,6 +9,60 @@ html {
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
+/* Estilizando o menu de navegação */
+.icones {
+    height: 25px;
+    width: 25px;
+    padding-right: 5px;
+}
+.itemMenu {
+    text-decoration: none;
+    font-family: 'Poppins';
+    color: rgb(255, 255, 255);
+}
+
+.header {
+    background: rgb(106, 13, 173);
+    padding-inline: 16px;
+}
+
+.menu {
+    max-width: 1280px;
+    height: 70px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.listaMenu {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+.listaMenu a {
+    font-size: 1.5rem;
+    padding-block: 16px;
+}
+
+.menuHamburguer {
+    border: none;
+    background: none;
+    border-top: 3px solid rgb(255, 255, 255);
+    cursor: pointer;
+    display: none;
+}
+.menuHamburguer::before,
+.menuHamburguer::after {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: rgb(255, 255, 255);
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
+}
 
 /* Pagina Home (Index) */
 
@@ -19,3 +73,65 @@ html {
 /* Pagina de Localização */
 
 /* Pagina de Inscrição */
+
+/* Responsividade*/
+@media (min-width: 280px) and (max-width: 880px) {
+    .menuHamburguer {
+        display: block;
+        z-index: 1;
+    }
+    .listaMenu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgb(106, 13, 173);
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+        clip-path: circle(100px at 90% -15%);
+        transition: 1s ease-out;
+        pointer-events: none;
+    }
+    .listaMenu a {
+        font-size: 4rem;
+        opacity: 0;
+    }
+    .listaMenu li:nth-child(1) a{
+        transition: 0.5s 0.2s;
+    }
+    .listaMenu li:nth-child(2) a{
+        transition: 0.5s 0.4s;
+    }
+    .listaMenu li:nth-child(3) a{
+        transition: 0.5s 0.6s;
+    }
+
+    .icones {
+        height: 35px;
+        width: 35px;
+        padding-right: 8px;
+    }
+    .menu.active .listaMenu {
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
+    }
+    .menu.active .listaMenu a {
+        opacity: 1;
+    }
+    .menu.active .menuHamburguer{
+        position: fixed;
+        top: 26px;
+        right: 16px;
+        border-top-color:transparent ;
+    }
+    .menu.active .menuHamburguer::before {
+        transform: rotate(135deg);
+    }
+    .menu.active .menuHamburguer::after {
+        transform: rotate(-135deg);
+        top: -7px;      
+    }
+}
