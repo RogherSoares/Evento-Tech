@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleForm.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -27,6 +27,68 @@
     </header>
 
     <main>
+
+        <section id="formContainer">
+            <div class="formHeader">
+                <h1 class="formTitulo">Fazer Cadastro</h1>
+            </div>
+
+            <form action="" id="formulario">
+                <div id="inputContainer">
+                    <div class="inputBox">
+                        <label for="name" class="formLabel">Primeiro Nome</label>
+                        <div class="inputField">
+                            <input type="text" name="name" id="name" class="formControl" placeholder="Nome">
+                            <img src="img/User.svg" alt="Icone Usuário" class="iconeForme">
+                        </div>
+                    </div>
+                </div>
+                <div id="inputContainer">
+                    <div class="inputBox">
+                        <label for="LastName" class="formLabel">Ultimo Nome</label>
+                        <div class="inputField">
+                            <input type="text" name="lastName" id="lastName" class="formControl" placeholder="Sobre Nome">
+                            <img src="img/User.svg" alt="Icone Usuário" class="iconeForme">
+                        </div>
+                    </div>
+                </div>
+                <div id="inputContainer">
+                    <div class="inputBox">
+                        <label for="nascimento" class="formLabel">Data de Nascimento</label>
+                        <div class="inputField">
+                            <input type="date" name="nascimento" id="nascimento" class="formControl">
+                        </div>
+                    </div>
+                </div>
+                <div id="inputContainer">
+                    <div class="inputBox">
+                        <label for="email" class="formLabel">E-mail</label>
+                        <div class="inputField">
+                            <input type="email" name="email" id="email" class="formControl" placeholder="exemplo@gmail.com">
+                            <img src="img/Email.svg" alt="Icone E-mail" class="iconeForme">
+                        </div>
+                    </div>
+                </div>
+                <div class="radioContainer">
+                    <label class="formLabel">Gênero</label>
+                    <div id="genderInputs">
+                        <div class="radioBox">
+                            <input type="radio" name="gender" id="female" class="formControl" value="female">
+                            <label for="female" class="formLabel">Feminino</label>
+                        </div>
+                        <div class="radioBox">
+                            <input type="radio" name="gender" id="male" class="formControl" value="male">
+                            <label for="male" class="formLabel">Masculino</label>
+                        </div>
+                        <div class="radioBox">
+                            <input type="radio" name="gender" id="other" class="formControl" value="other">
+                            <label for="other" class="formLabel">outro</label>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btnCadastro"><img src="img/Check.svg" alt="Check">Cadastrar</button>
+            </form>
+        </section>
 
     </main>
 
