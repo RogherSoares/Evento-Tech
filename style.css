@@ -9,16 +9,24 @@ html {
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
+
+body {
+    background-color: rgb(34, 34, 34);
+}
+
+
+
 /* Estilizando o menu de navegação */
 .icones {
     height: 25px;
     width: 25px;
     padding-right: 5px;
 }
+
 .itemMenu {
     text-decoration: none;
     font-family: 'Poppins';
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);;
 }
 
 .header {
@@ -40,6 +48,7 @@ html {
     gap: 32px;
     list-style: none;
 }
+
 .listaMenu a {
     font-size: 1.5rem;
     padding-block: 16px;
@@ -52,6 +61,7 @@ html {
     cursor: pointer;
     display: none;
 }
+
 .menuHamburguer::before,
 .menuHamburguer::after {
     content: " ";
@@ -64,55 +74,275 @@ html {
     transition: 0.3s;
 }
 
-/* Estilizando o conteudo da esquerda */
-.card {
+/* Botão de Inbscreva-se*/
+
+#inscricao {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Botão logo acima do footer */
+#botaoTabela {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* Estilo dos botões */
+#btnInscricao, #btnTabela {
+    background-color: rgb(0, 255, 127);
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+
+/* Conteudo da pagina */
+
+#container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    height: 100%;
+    width: 60%;
+    background: rgba(224, 224, 224, 0.3);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 15px -3px rgba(255, 255, 255, 0.5);
+    border: 3px solid rgb(168, 85, 247);
+}
+
+
+#conteudo {
+    width: 80%;
+    align-items: center;
+    margin-left: 50px;
+    font-size: 1.5rem;
+    margin: 30px;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto';
+    font-weight: 500;
+}
+
+.imgConteudo img {
+    width: 80%;
+    height: 80%;
+}
+#conteudo h1 {
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 6rem;
+}
+#conteudo h2 {
+    text-align: end;
+    font-family: 'Poppins';
+    margin-top: -15px;
+}
+#conteudo h3 {
+    text-align: start;
+    font-family: 'Poppins';
+    margin-top: 10px;
+}
+
+/* Tabela */
+
+#cronograma {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 1px;
+    grid-gap: 16px;
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    background-color: rgb(224, 224, 224);
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    bottom: 0;
+}
+
+#tabela {
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto';
+    font-weight: 600;
+}
+#tabela h3 {
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+table {
+    width: 352px;
+    height: 100px;
+    border-collapse: collapse;
+}
+
+td {
+    border: 2px solid rgb(168, 85, 247);
+    padding: 8px;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: rgb(34, 34, 34);
+}
+
+/* Estilizando o conteudo da esquerda */
+#esquerda {
+    width: 300px;
+    float: left;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(244, 244, 244);
+    border-radius: 10px;
+    margin: 20px;
+    position: relative;
+}
+
+#esquerda h2 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    color: rgb(34, 34, 34);
+}
+
+.carrossel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 400px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.cards {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.cards.transition {
+    transition: transform 0.5s ease;
+}
+
+.Card {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    flex-shrink: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
 }
 
 .imgPalestrante {
     width: 100%;
-    height: 100%;
-}
-.palestrante {
-    background: rgba(224, 224, 224, 0.4);
-    backdrop-filter: blur(5px);
-    margin: 60px;
-    box-shadow: 1px 1px 2px rgba(224, 224, 224, 0.3);
+    height: 250px;
+    display: block;
+    border-radius: 10px;
 }
 
-#fotosEvento {
-    width: 400px;
-    height: 400px;
-    position:relative;
-}
-
-h1 {
+.text-container {
     text-align: center;
-    font-family: 'Poppins';
-    font-size: 2rem;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: rgb(34, 34, 34);
+}
+
+.text-container h3 {
+    margin: 0;
+    font-size: 1.2em;
+    font-family: 'Roboto';
+    color: rgb(34, 34, 34);
+}
+
+.text-container p {
+    margin: 5px 0 0;
+    font-size: 0.9em;
+    font-family: 'Roboto';
+    color: rgb(34, 34, 34);
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
+
+/* Estilizando o conteudo da direita */
+
+#direita {
+    position: fixed;
+    top: 30%;
     margin: 10px;
-    color: rgb(255, 255, 255);
-}
-h3 {
+    right: 0;
+    transform: translateY(-50%);
+    width: 300px;
+    padding: 20px;
+    background-color: rgb(224, 224, 224);
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    border-radius: 8px;
     text-align: center;
-    font-family: 'Roboto';
-    font-size: 1.8rem;
-    color: rgb(255, 255, 255);
 }
-p {
-    text-align: center;
-    font-family: 'Roboto';
-    font-size: 1.3rem;
-    color: rgb(255, 255, 255);
+#direita h2 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    color: rgb(34, 34, 34);
 }
+#direita p {
+    font-family: 'Roboto';
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgb(34, 34, 34);
+    padding-top: 8px;
+}
+
+#mapBox {
+    width: 100%;
+    height: 150px;
+    border-radius: 8px;
+}
+
 
 /* Footer*/
 
-footer{
+footer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -123,8 +353,8 @@ footer{
     display: flex;
     position: relative;
     gap: 40px;
-  }
-  
+}
+
 .social {
     width: 80px;
     height: 80px;
@@ -137,25 +367,25 @@ footer{
     position: relative;
     transition: .2s;
 }
-  
+
 .social span {
     position: absolute;
 }
-  
+
 .social:hover {
     width: 180px;
-  }
-  
+}
+
 .icon {
     color: rgb(30, 144, 255);
     font-size: 2.5rem;
     transition: .2s;
 }
-  
+
 .social:hover .icon {
     transform: scale(0);
 }
-  
+
 .social .text {
     color: rgb(255, 255, 255);
     font-size: 2rem;
@@ -165,11 +395,12 @@ footer{
     font-weight: 600;
     font-family: 'Roboto';
 }
-  
+
 .social:hover .text {
     transform: scale(1);
+    transition: .2s;
 }
-  
+
 .social::before {
     content: ' ';
     position: absolute;
@@ -178,7 +409,7 @@ footer{
     opacity: 0;
     border-radius: 60px;
 }
-  
+
 .social:hover::before {
     opacity: 1;
 }
@@ -189,6 +420,7 @@ footer{
         display: block;
         z-index: 1;
     }
+
     .listaMenu {
         position: fixed;
         top: 0;
@@ -204,17 +436,21 @@ footer{
         transition: 1s ease-out;
         pointer-events: none;
     }
+
     .listaMenu a {
         font-size: 3rem;
         opacity: 0;
     }
-    .listaMenu li:nth-child(1) a{
+
+    .listaMenu li:nth-child(1) a {
         transition: 0.5s 0.2s;
     }
-    .listaMenu li:nth-child(2) a{
+
+    .listaMenu li:nth-child(2) a {
         transition: 0.5s 0.4s;
     }
-    .listaMenu li:nth-child(3) a{
+
+    .listaMenu li:nth-child(3) a {
         transition: 0.5s 0.6s;
     }
 
@@ -223,24 +459,29 @@ footer{
         width: 35px;
         padding-right: 8px;
     }
+
     .menu.active .listaMenu {
         clip-path: circle(1500px at 90% -15%);
         pointer-events: all;
     }
+
     .menu.active .listaMenu a {
         opacity: 1;
     }
-    .menu.active .menuHamburguer{
+
+    .menu.active .menuHamburguer {
         position: fixed;
         top: 26px;
         right: 16px;
-        border-top-color:transparent ;
+        border-top-color: transparent;
     }
+
     .menu.active .menuHamburguer::before {
         transform: rotate(135deg);
     }
+
     .menu.active .menuHamburguer::after {
         transform: rotate(-135deg);
-        top: -7px;      
+        top: -7px;
     }
 }
