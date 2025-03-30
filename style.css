@@ -414,8 +414,12 @@ footer {
     opacity: 1;
 }
 
-/* Responsividade*/
-@media (min-width: 280px) and (max-width: 880px) {
+
+/* Responsividade para telas pequenas */
+
+@media (max-width: 880px) {
+    /* Menu hamburguer */
+
     .menuHamburguer {
         display: block;
         z-index: 1;
@@ -483,5 +487,143 @@ footer {
     .menu.active .menuHamburguer::after {
         transform: rotate(-135deg);
         top: -7px;
+    }
+    .menu.active + main {
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.3s ease-out;
+    }
+    .btnInscricao{
+        justify-content: center;
+    }
+}
+
+/* Responsividade para tablets e telas pequenas (Até 768px) */
+@media (max-width: 768px) {
+    /* Ajustando o tamanho dos textos */
+    #conteudo h1 {
+        font-size: 4rem;
+    }
+
+    #conteudo h2 {
+        font-size: 2rem;
+    }
+
+    #conteudo h3 {
+        font-size: 1.5rem;
+    }
+
+    /* Ajustando o carrossel para ocupar toda a tela */
+    .carrossel {
+        height: 300px;
+    }
+
+    /* Ajuste para a largura do container */
+    #container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* Ajuste para os itens de menu */
+    .listaMenu a {
+        font-size: 2rem;
+        padding-block: 12px;
+    }
+
+    /* Ajustando a posição do conteúdo da esquerda */
+    #esquerda {
+        width: 100%;
+        float: none;
+        margin: 20px 0;
+    }
+
+    /* Ajustando o conteúdo da direita */
+    #direita {
+        width: 100%;
+        position: relative;
+        top: unset;
+        right: unset;
+        transform: unset;
+        margin: 10px 0;
+        box-shadow: none;
+    }
+    #boxMap{
+        width: 70%;
+        height: 70%;
+    }
+}
+
+/* Responsividade para dispositivos móveis (até 480px) */
+@media (max-width: 480px) {
+    /* Ajuste para o tamanho da fonte dos menus */
+    .listaMenu a {
+        font-size: 1.8rem;
+        padding-block: 10px;
+    }
+
+    /* Ajustando os textos para cabeçalhos */
+    #conteudo h1 {
+        font-size: 3rem;
+    }
+
+    #conteudo h2 {
+        font-size: 1.5rem;
+    }
+
+    #conteudo h3 {
+        font-size: 1.2rem;
+    }
+
+    /* Ajustando o carrossel */
+    .carrossel {
+        height: 250px;
+    }
+
+    /* Ajuste do container do conteúdo */
+    #container {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+
+    /* Ajustando o botão do carrossel */
+    #prev, #next {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* Ajustando o tamanho do footer */
+    footer {
+        flex-direction: column;
+    }
+
+    .redeSocial {
+        gap: 20px;
+    }
+
+    .social {
+        width: 60px;
+        height: 60px;
+    }
+
+    .icon {
+        font-size: 1.8rem;
+    }
+
+    .social .text {
+        font-size: 1.2rem;
+    }
+}
+
+/* Responsividade para tablets em modo retrato (max-width: 600px) */
+@media (max-width: 600px) {
+    /* Ajustando o carrossel para ocupar toda a tela */
+    .carrossel {
+        height: 300px;
+    }
+
+    /* Ajuste do botão "Inscrever-se" */
+    #inscricao {
+        margin-top: 15px;
     }
 }
