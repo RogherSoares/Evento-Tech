@@ -259,6 +259,79 @@ p {
     color: rgb(255, 255, 255);
 }
 
+/* Footer*/
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.redeSocial {
+    list-style-type: none;
+    display: flex;
+    position: relative;
+    gap: 40px;
+  }
+  
+.social {
+    width: 80px;
+    height: 80px;
+    background-color: rgb(224, 224, 224);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: .2s;
+}
+  
+.social span {
+    position: absolute;
+}
+  
+.social:hover {
+    width: 180px;
+  }
+  
+.icon {
+    color: rgb(30, 144, 255);
+    font-size: 2.5rem;
+    transition: .2s;
+}
+  
+.social:hover .icon {
+    transform: scale(0);
+}
+  
+.social .text {
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    transform: scale(0);
+    transition: .2s;
+    transition-delay: .1s;
+    font-weight: 600;
+    font-family: 'Roboto';
+}
+  
+.social:hover .text {
+    transform: scale(1);
+}
+  
+.social::before {
+    content: ' ';
+    position: absolute;
+    background-image: linear-gradient(45deg, var(--cor1), var(--cor2));
+    inset: 0;
+    opacity: 0;
+    border-radius: 60px;
+}
+  
+.social:hover::before {
+    opacity: 1;
+}
+
 /* Responsividade*/
 @media (min-width: 280px) and (max-width: 880px) {
     .menuHamburguer {
