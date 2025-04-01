@@ -94,8 +94,10 @@ Com o planejamento definido, a próxima etapa será a implementação do layout 
 
 ## **👨‍💻 Autores**
 ### Equipe responsável pelo desenvolvimento do projeto.
-- Rogher Adriano Soares
 - Kaio Schobiner
+- Rogher Adriano Soares
+- Thiago
+
 
 ---
 Este documento será atualizado conforme o progresso do desenvolvimento do projeto. 🚀
