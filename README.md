@@ -96,7 +96,7 @@ Com o planejamento definido, a próxima etapa será a implementação do layout 
 ### Equipe responsável pelo desenvolvimento do projeto.
 - Kaio Schobiner
 - Rogher Adriano Soares
-- Thiago
+- Thiago Alexandre Bastos Emed
 
 
 ---
