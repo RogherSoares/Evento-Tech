@@ -3,22 +3,15 @@
     border: 0;
     padding: 0;
 }
-
 html {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
-
 body {
-    background-color: rgb(34, 34, 34);
-}
-
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    background-image: url(img/wallpaper.png);
+    background-size: cover;
+    background-position: center;
 }
 
 /* Estilizando o Formulário */
@@ -29,20 +22,22 @@ form {
     gap: 32px;
     height: 100%;
 }
-
 #formContainer {
     display: flex;
     flex-direction: column;
     gap: 32px;
     height: 100%;
-    width: 33%;
+    width: 48%;
+    margin-left: 450px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    position: relative;
     background: rgba(224, 224, 224, 0.3);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 10px 15px -3px rgba(255, 255, 255, 0.5);
     border: 3px solid rgb(168, 85, 247);
 }
-
 .formTitulo {
     font-family: 'Poppins';
     font-weight: 600;
@@ -51,9 +46,6 @@ form {
     text-align: center;
     position: relative;
 }
-
-
-
 .btnCadastro {
     background: rgb(0, 255, 127);
     display: flex;
@@ -72,19 +64,16 @@ form {
     height: fit-content;
     box-shadow: 2px 2px 3px  rgba(255, 255, 255, 0.3);
 }
-
 #inputContainer {
     display: grid;
     gap: 24px;
 }
-
 .formLabel {
     font-family: 'Roboto';
     font-size: 1.5rem;
     color: rgb(255, 255, 255);
     font-weight: 500;
 }
-
 .inputField {
     display: flex;
     align-items: center;
@@ -92,7 +81,6 @@ form {
     border-radius: 8px;
     box-shadow: 2px 2px 3px rgba(255, 255, 255, 0.3);
 }
-
 .inputField img {
     display: flex;
     align-items: center;
@@ -110,35 +98,49 @@ form {
 .formControl:focus {
     outline: none;
 }
-
 .inputBox .inputField:focus-within {
     outline: 2px solid rgb(168, 85, 247);
 }
-
 input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 1000px white inset !important;
     color: rgb(0, 0, 0);
 }
-
 .radioContainer {
     grid-column: span 2;
 }
-
 #genderInputs {
     display: flex;
     gap: 20px;
 }
-
 .radioBox {
     display: flex;
     gap: 5px;
     align-items: center;
 }
-
 .formControl[type="radio"] {
     accent-color: rgb(168, 85, 247);
 }
-
+#confirmationMessage {
+    width: 40%;
+    height: 10%;
+    font-size: 5rem;
+    font-family: 'Roboto';
+    color: rgb(10, 116, 218);
+    text-shadow: 1px 1px 2px rgb(106, 13, 173);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(224, 224, 224, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid rgb(30, 144, 255);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 3;
+    text-align: center;
+    justify-content: center;
+}
 /* Estilizando o menu de navegação */
 .icones {
     height: 25px;
@@ -155,7 +157,6 @@ input:-webkit-autofill {
     background: rgb(106, 13, 173);
     padding-inline: 16px;
 }
-
 .menu {
     max-width: 1280px;
     height: 70px;
@@ -164,7 +165,6 @@ input:-webkit-autofill {
     justify-content: space-between;
     align-items: center;
 }
-
 .listaMenu {
     display: flex;
     gap: 32px;
@@ -174,7 +174,6 @@ input:-webkit-autofill {
     font-size: 1.5rem;
     padding-block: 16px;
 }
-
 .menuHamburguer {
     border: none;
     background: none;
@@ -195,6 +194,13 @@ input:-webkit-autofill {
 }
 
 /* Estilizando o conteudo da esquerda */
+#fotosEvento {
+    width: 300px;
+    height: 400px;
+    position:relative;
+    margin-left: 20px;
+    float: left;
+}
 .card {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -202,23 +208,15 @@ input:-webkit-autofill {
     max-width: 1200px;
     margin: 0 auto;
 }
-
 .imgFotos {
     width: 100%;
     height: 100%;
 }
 .fotos {
     background: rgba(224, 224, 224, 0.4);
-    margin-right: 60px;
     padding: 10px;
     box-shadow: 1px 1px 2px rgba(224, 224, 224, 0.3);
     border: 3px solid rgb(30, 144, 255);
-}
-
-#fotosEvento {
-    width: 400px;
-    height: 400px;
-    position:relative;
 }
 
 /* Estilizando o conteudo da direita */
@@ -232,13 +230,15 @@ input:-webkit-autofill {
     box-shadow: 1px 1px 2px rgba(224, 224, 224, 0.3);
     border: 3px solid rgb(30, 144, 255);
 }
-
 #infEvento {
     width: 400px;
     height: 400px;
-    position:relative;
+    position:fixed;
+    right: 0;
+    transform: translateY(-50%);
+    top: 30%;
+    margin: 20px;
 }
-
 h1 {
     text-align: center;
     font-family: 'Poppins';
@@ -251,29 +251,29 @@ h3 {
     font-family: 'Roboto';
     font-size: 1.8rem;
     color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
 p {
     text-align: center;
     font-family: 'Roboto';
     font-size: 1.3rem;
     color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
 
 /* Footer*/
-
 footer{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 .redeSocial {
     list-style-type: none;
     display: flex;
     position: relative;
     gap: 40px;
-  }
-  
+}
+
 .social {
     width: 80px;
     height: 80px;
@@ -285,26 +285,21 @@ footer{
     justify-content: center;
     position: relative;
     transition: .2s;
-}
-  
+}  
 .social span {
     position: absolute;
-}
-  
+}  
 .social:hover {
     width: 180px;
-  }
-  
+}  
 .icon {
     color: rgb(30, 144, 255);
     font-size: 2.5rem;
     transition: .2s;
-}
-  
+} 
 .social:hover .icon {
     transform: scale(0);
-}
-  
+} 
 .social .text {
     color: rgb(255, 255, 255);
     font-size: 2rem;
@@ -313,12 +308,10 @@ footer{
     transition-delay: .1s;
     font-weight: 600;
     font-family: 'Roboto';
-}
-  
+}  
 .social:hover .text {
     transform: scale(1);
-}
-  
+}  
 .social::before {
     content: ' ';
     position: absolute;
@@ -326,14 +319,13 @@ footer{
     inset: 0;
     opacity: 0;
     border-radius: 60px;
-}
-  
+}  
 .social:hover::before {
     opacity: 1;
 }
 
 /* Responsividade*/
-@media (min-width: 280px) and (max-width: 880px) {
+@media (max-width: 880px) {
     .menuHamburguer {
         display: block;
         z-index: 1;
@@ -366,7 +358,6 @@ footer{
     .listaMenu li:nth-child(3) a{
         transition: 0.5s 0.6s;
     }
-
     .icones {
         height: 35px;
         width: 35px;
@@ -396,5 +387,67 @@ footer{
         visibility: hidden;
         opacity: 0;
         transition: opacity 0.3s ease-out;
+    }
+    #fotosEvento {
+        width: 100%;
+        height: 30%;
+        position:relative;
+        margin-bottom: 10px;
+    }
+    #infEvento {
+        position: relative;
+        width: 100%;
+        margin: 0;
+        bottom: 0;
+        margin-top: 150px;
+        margin-left: 20px;
+    }
+    #infEvento h1 {
+        margin-top: 220px;
+        width: 100%;
+        height: 15%;
+    }
+    #formContainer {
+        width: 100%;
+        margin-left: 0;
+        position: relative;
+        text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    }
+    .formLabel {
+        font-size: 1.8rem;
+    }
+    .btnCadastro {
+        width: 40%;
+    }
+    h1 {
+        width: 100%;
+        height: 30%;
+    }
+    p {
+        width: 100%;
+        height: 60%;
+        font-size: 2rem;
+        text-align: center;
+    }
+    h3 {
+        width: 100%;
+        height: 40%;
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .informacoes {
+        width: 100%;
+        height: 150px;
+        margin-left: 0;
+        bottom: 0;
+    }
+    .card {
+        display: flex;
+        max-width: 100%;
+        height: 100px;
+    }
+    header {
+        width: 100%;
     }
 }
