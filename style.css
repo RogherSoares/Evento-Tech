@@ -11,7 +11,9 @@ html {
 }
 
 body {
-    background-color: rgb(34, 34, 34);
+    background-image: url(img/wallpaper.png);
+    background-size: cover;
+    background-position: center;
 }
 
 
@@ -213,7 +215,7 @@ td {
     float: left;
     padding: 10px;
     text-align: center;
-    background-color: rgb(244, 244, 244);
+    background-color: rgba(244, 244, 244, 0.2);
     border-radius: 10px;
     margin: 20px;
     position: relative;
@@ -223,6 +225,7 @@ td {
     margin-bottom: 5px;
     font-size: 1.8em;
     color: rgb(34, 34, 34);
+    text-shadow: 1px 1px 2px rgb(255, 255, 255);
 }
 #esquerda h3 {
     font-family: 'Roboto';
@@ -332,7 +335,7 @@ button {
     transform: translateY(-50%);
     width: 300px;
     padding: 20px;
-    background-color: rgb(224, 224, 224);
+    background-color: rgba(224, 224, 224, 0.2);
     box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
     z-index: 1;
     border-radius: 8px;
@@ -340,14 +343,16 @@ button {
 }
 #direita h2 {
     margin-bottom: 15px;
-    font-size: 1.5em;
+    font-size: 2rem;
     color: rgb(34, 34, 34);
+    text-shadow: 1px 1px 2px rgb(255, 255, 255);
 }
 #direita p {
     font-family: 'Roboto';
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 500;
     color: rgb(34, 34, 34);
+    text-shadow: 1px 1px 2px rgb(255, 255, 255);
     padding-top: 8px;
 }
 
