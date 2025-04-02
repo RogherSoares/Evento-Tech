@@ -3,20 +3,16 @@
     border: 0;
     padding: 0;
 }
-
 html {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
-
 body {
     background-image: url(img/wallpaper.png);
     background-size: cover;
     background-position: center;
 }
-
-
 
 /* Estilizando o menu de navegação */
 .icones {
@@ -24,18 +20,15 @@ body {
     width: 25px;
     padding-right: 5px;
 }
-
 .itemMenu {
     text-decoration: none;
     font-family: 'Poppins';
     color: rgb(255, 255, 255);;
 }
-
 .header {
     background: rgb(106, 13, 173);
     padding-inline: 16px;
 }
-
 .menu {
     max-width: 1280px;
     height: 70px;
@@ -44,18 +37,15 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-
 .listaMenu {
     display: flex;
     gap: 32px;
     list-style: none;
 }
-
 .listaMenu a {
     font-size: 1.5rem;
     padding-block: 16px;
 }
-
 .menuHamburguer {
     border: none;
     background: none;
@@ -65,7 +55,6 @@ body {
     top: 30px;
     right: 0;
 }
-
 .menuHamburguer::before,
 .menuHamburguer::after {
     content: " ";
@@ -79,7 +68,6 @@ body {
 }
 
 /* Botão de Inbscreva-se*/
-
 #inscricao {
     display: flex;
     justify-content: center;
@@ -108,9 +96,7 @@ body {
     font-size: 1.8rem;
 }
 
-
 /* Conteudo da pagina */
-
 #container {
     display: flex;
     flex-direction: column;
@@ -123,8 +109,6 @@ body {
     box-shadow: 0px 10px 15px -3px rgba(255, 255, 255, 0.5);
     border: 3px solid rgb(168, 85, 247);
 }
-
-
 #conteudo {
     width: 80%;
     align-items: center;
@@ -136,7 +120,6 @@ body {
     font-family: 'Roboto';
     font-weight: 500;
 }
-
 .imgConteudo img {
     width: 80%;
     height: 80%;
@@ -163,7 +146,6 @@ body {
 }
 
 /* Tabela */
-
 #cronograma {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -176,7 +158,6 @@ body {
     border-radius: 8px;
     bottom: 0;
 }
-
 #tabela {
     display: flex;
     flex-direction: column;
@@ -192,13 +173,11 @@ body {
     font-size: 2rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
-
 table {
     width: 352px;
     height: 100px;
     border-collapse: collapse;
 }
-
 td {
     border: 2px solid rgb(168, 85, 247);
     padding: 8px;
@@ -220,7 +199,6 @@ td {
     margin: 20px;
     position: relative;
 }
-
 #esquerda h2 {
     margin-bottom: 5px;
     font-size: 1.8em;
@@ -237,7 +215,6 @@ td {
     font-size: 1.5rem;
     text-align: justify;
 }
-
 .carrossel {
     position: relative;
     overflow: hidden;
@@ -246,18 +223,15 @@ td {
     margin: auto;
     border-radius: 10px;
 }
-
 .cards {
     display: flex;
     transition: transform 0.5s ease;
     width: 100%;
     justify-content: flex-start;
 }
-
 .cards.transition {
     transition: transform 0.5s ease;
 }
-
 .Card {
     min-width: 100%;
     box-sizing: border-box;
@@ -267,20 +241,17 @@ td {
     justify-content: center;
     align-items: center;
 }
-
 .img-container {
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
 }
-
 .imgPalestrante {
     width: 100%;
     height: 250px;
     display: block;
     border-radius: 10px;
 }
-
 .text-container {
     text-align: center;
     padding: 10px;
@@ -289,21 +260,18 @@ td {
     box-sizing: border-box;
     color: rgb(34, 34, 34);
 }
-
 .text-container h3 {
     margin: 0;
     font-size: 1.2em;
     font-family: 'Roboto';
     color: rgb(34, 34, 34);
 }
-
 .text-container p {
     margin: 5px 0 0;
     font-size: 0.9em;
     font-family: 'Roboto';
     color: rgb(34, 34, 34);
 }
-
 button {
     position: absolute;
     top: 50%;
@@ -315,8 +283,6 @@ button {
     cursor: pointer;
     z-index: 2;
 }
-
-
 #prev {
     left: 10px;
 }
@@ -326,7 +292,6 @@ button {
 }
 
 /* Estilizando o conteudo da direita */
-
 #direita {
     position: fixed;
     top: 30%;
@@ -355,29 +320,24 @@ button {
     text-shadow: 1px 1px 2px rgb(255, 255, 255);
     padding-top: 8px;
 }
-
 #mapBox {
     width: 100%;
     height: 150px;
     border-radius: 8px;
 }
 
-
 /* Footer*/
-
 footer {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 .redeSocial {
     list-style-type: none;
     display: flex;
     position: relative;
     gap: 40px;
 }
-
 .social {
     width: 80px;
     height: 80px;
@@ -390,25 +350,20 @@ footer {
     position: relative;
     transition: .2s;
 }
-
 .social span {
     position: absolute;
 }
-
 .social:hover {
     width: 180px;
 }
-
 .icon {
     color: rgb(30, 144, 255);
     font-size: 2.5rem;
     transition: .2s;
 }
-
 .social:hover .icon {
     transform: scale(0);
 }
-
 .social .text {
     color: rgb(255, 255, 255);
     font-size: 2rem;
@@ -418,12 +373,10 @@ footer {
     font-weight: 600;
     font-family: 'Roboto';
 }
-
 .social:hover .text {
     transform: scale(1);
     transition: .2s;
 }
-
 .social::before {
     content: ' ';
     position: absolute;
@@ -432,14 +385,11 @@ footer {
     opacity: 0;
     border-radius: 60px;
 }
-
 .social:hover::before {
     opacity: 1;
 }
 
-
 /* Responsividade para telas pequenas */
-
 @media (max-width: 880px) {
     header {
         width: 100vw;
@@ -452,7 +402,6 @@ footer {
         display: block;
         z-index: 1;
     }
-
     .listaMenu {
         position: fixed;
         top: 50px;
@@ -471,50 +420,40 @@ footer {
         border-radius: 50px;
         box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2);
     }
-
     .listaMenu a {
         font-size: 3rem;
         opacity: 0;
     }
-
     .listaMenu li:nth-child(1) a {
         transition: 0.5s 0.2s;
     }
-
     .listaMenu li:nth-child(2) a {
         transition: 0.5s 0.4s;
     }
-
     .listaMenu li:nth-child(3) a {
         transition: 0.5s 0.6s;
     }
-
     .icones {
         height: 35px;
         width: 35px;
         padding-right: 8px;
     }
-
     .menu.active .listaMenu {
         clip-path: circle(1500px at 90% -15%);
         pointer-events: all;
     }
-
     .menu.active .listaMenu a {
         opacity: 1;
     }
-
     .menu.active .menuHamburguer {
         position: fixed;
         top: 26px;
         right: 16px;
         border-top-color: transparent;
     }
-
     .menu.active .menuHamburguer::before {
         transform: rotate(135deg);
     }
-
     .menu.active .menuHamburguer::after {
         transform: rotate(-135deg);
         top: -7px;
@@ -526,15 +465,13 @@ footer {
     }
     .btnInscricao{
         justify-content: center;
-    }
-    
+    }   
     #esquerda {
         width: 100%;
         align-items: center;
         margin: 0;
         margin-left: 15px;
     }
-
     #container {
         width: 100%;
         align-items: center;
@@ -553,7 +490,6 @@ footer {
     #continer p {
         font-size: 2rem;
     }
-
     #direita {
         width: 100%;
         position: relative;
@@ -584,8 +520,7 @@ footer {
         margin-bottom: 23px;
         margin-left: -90px;
         z-index: 1;
-    }
-    
+    }  
     #botaoTabela {
         margin-left: -150px;
         z-index: 1;
