@@ -74,6 +74,7 @@ body {
     margin-top: 20px;
     position: relative;
     z-index: 1;
+    margin-right: 90px;
 }
 
 /* Botão logo acima do footer */
@@ -82,6 +83,7 @@ body {
     justify-content: center;
     position: relative;
     z-index: 1;
+    margin-right: 90px;
 }
 
 /* Estilo dos botões */
@@ -202,8 +204,8 @@ td {
 #esquerda h2 {
     margin-bottom: 5px;
     font-size: 1.8em;
-    color: rgb(34, 34, 34);
-    text-shadow: 1px 1px 2px rgb(255, 255, 255);
+    color: rgb(10, 116, 218);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
 #esquerda h3 {
     font-family: 'Roboto';
@@ -309,15 +311,15 @@ button {
 #direita h2 {
     margin-bottom: 15px;
     font-size: 2rem;
-    color: rgb(34, 34, 34);
-    text-shadow: 1px 1px 2px rgb(255, 255, 255);
+    color: rgb(10, 116, 218);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
 #direita p {
     font-family: 'Roboto';
     font-size: 2rem;
     font-weight: 500;
-    color: rgb(34, 34, 34);
-    text-shadow: 1px 1px 2px rgb(255, 255, 255);
+    color: rgb(10, 116, 218);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
     padding-top: 8px;
 }
 #mapBox {
@@ -472,6 +474,12 @@ footer {
         margin: 0;
         margin-left: 15px;
     }
+    #esquerda h2 {
+        font-size: 2.8rem;
+    }
+    #esquerda h3, p {
+        font-size: 2.5rem;
+    }
     #container {
         width: 100%;
         align-items: center;
@@ -489,6 +497,9 @@ footer {
     }
     #continer p {
         font-size: 2rem;
+    }
+    .text-container{
+        height: 55%;
     }
     #direita {
         width: 100%;
@@ -519,10 +530,12 @@ footer {
         margin-top: 23px;
         margin-bottom: 23px;
         margin-left: -90px;
+        margin-right: 0;
         z-index: 1;
     }  
     #botaoTabela {
         margin-left: -150px;
         z-index: 1;
+        margin-right: 0;
     }
 }
