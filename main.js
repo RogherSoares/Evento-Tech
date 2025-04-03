@@ -21,6 +21,9 @@ document.addEventListener("click", (event) => {
 let currentIndex = 0;
 const cards = document.querySelector('.cards');
 const totalCards = document.querySelectorAll('.Card').length;
+let currentIndexFoto = 0;
+const cardsFoto = document.querySelector('.cardsFoto');
+const totalCardsFoto = document.querySelectorAll('.CardFoto').length;
 
 document.getElementById('next').addEventListener('click', () => {
     if (currentIndex < totalCards - 1) {
@@ -29,6 +32,14 @@ document.getElementById('next').addEventListener('click', () => {
         currentIndex = 0; // Volta para o primeiro card
     }
     updateCarousel();
+});
+document.getElementById('nextFoto').addEventListener('click', () => {
+    if (currentIndexFoto < totalCardsFoto - 1) {
+        currentIndexFoto++;
+    } else {
+        currentIndexFoto = 0; // Volta para o primeiro card
+    }
+    updateCarouselFoto();
 });
 
 document.getElementById('prev').addEventListener('click', () => {
@@ -39,9 +50,20 @@ document.getElementById('prev').addEventListener('click', () => {
     }
     updateCarousel();
 });
+document.getElementById('prevFoto').addEventListener('click', () => {
+    if (currentIndexFoto > 0) {
+        currentIndexFoto--;
+    } else {
+        currentIndexFoto = totalCards - 1; // Vai para o último card
+    }
+    updateCarouselFoto();
+});
 
 function updateCarousel() {
     const offset = -currentIndex * 100; // Cada card ocupa 100% da largura
     cards.style.transform = `translateX(${offset}%)`;
 }
-
+function updateCarouselFoto() {
+    const offsetFoto = -currentIndexFoto * 100; // Cada card ocupa 100% da largura
+    cardsFoto.style.transform = `translateX(${offsetFoto}%)`;
+}
