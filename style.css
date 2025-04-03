@@ -191,8 +191,9 @@ td {
 }
 
 /* Estilizando o conteudo da esquerda */
-#esquerda {
+#esquerda, #esquerdaBaixo {
     width: 300px;
+    height: 300px;
     float: left;
     padding: 10px;
     text-align: center;
@@ -201,9 +202,56 @@ td {
     margin: 20px;
     position: relative;
 }
-#esquerda h2 {
+#esquerda {
+    height: 520px;
+}
+#esquerdaBaixo {
+    margin-top: 565px;
+    margin-left: -340px;
+}
+
+.carrossel, .carrosselFoto {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 400px;
+    margin: auto;
+    border-radius: 10px;
+}
+.carrossel {
+    height: 500px;
+}
+.cards, .cardsFoto {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+    justify-content: flex-start;
+}
+.cards.transition, .cardsFoto.transition {
+    transition: transform 0.5s ease;
+}
+.Card, .CardFoto {
+    min-width: 300px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    padding: 10px;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+}#card {
+    width: 500px;
+}
+#prev, #prevFoto {
+    left: 10px;
+}
+
+#next, #nextFoto {
+    right: 10px;
+}
+#esquerda h2, #esquerdaBaixo h2 {
     margin-bottom: 5px;
-    font-size: 1.8em;
+    font-size: 2em;
     color: rgb(10, 116, 218);
     text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
@@ -214,34 +262,8 @@ td {
 }
 #esquerda p {
     font-family: 'Roboto';
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-align: justify;
-}
-.carrossel {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 530px;
-    margin: auto;
-    border-radius: 10px;
-}
-.cards {
-    display: flex;
-    transition: transform 0.5s ease;
-    width: 100%;
-    justify-content: flex-start;
-}
-.cards.transition {
-    transition: transform 0.5s ease;
-}
-.Card {
-    min-width: 100%;
-    box-sizing: border-box;
-    padding: 10px;
-    flex-shrink: 0;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
 }
 .img-container {
     display: flex;
@@ -284,13 +306,6 @@ button {
     padding: 10px;
     cursor: pointer;
     z-index: 2;
-}
-#prev {
-    left: 10px;
-}
-
-#next {
-    right: 10px;
 }
 
 /* Estilizando o conteudo da direita */
