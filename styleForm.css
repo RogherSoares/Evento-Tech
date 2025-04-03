@@ -167,8 +167,9 @@ input:-webkit-autofill {
 }
 .listaMenu {
     display: flex;
-    gap: 32px;
+    gap: 30px;
     list-style: none;
+    z-index: 3;
 }
 .listaMenu a {
     font-size: 1.5rem;
@@ -238,6 +239,7 @@ input:-webkit-autofill {
     transform: translateY(-50%);
     top: 30%;
     margin: 20px;
+    margin-top: 80px;
 }
 h1 {
     text-align: center;
@@ -332,8 +334,8 @@ footer{
     }
     .listaMenu {
         position: fixed;
-        top: 0;
-        left: 0;
+        top: 50px;
+        right: 0;
         width: 100vw;
         height: 100vh;
         background: rgb(106, 13, 173);
@@ -344,6 +346,7 @@ footer{
         clip-path: circle(100px at 90% -15%);
         transition: 1s ease-out;
         pointer-events: none;
+        border-radius: 30px;
     }
     .listaMenu a {
         font-size: 3rem;
