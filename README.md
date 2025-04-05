@@ -19,11 +19,15 @@ A estrutura inicial de pastas e arquivos está organizada da seguinte maneira:
 /evento-tech
 │── /css
 │   ├── style.css
+│   ├── styleForm.css
+│   ├── stylePalest.css
+│   ├── styleLoc.css
+│   ├── styleProg.css
 │── /js
 │   ├── main.js
-│── /img
+│── /images
 │   ├── (imagens do evento e palestrantes)
-│── index.html (Página principal)
+│── index.html
 │── programacao.html
 │── palestrantes.html
 │── localizacao.html
@@ -32,23 +36,15 @@ A estrutura inicial de pastas e arquivos está organizada da seguinte maneira:
 ```
 ## **📌 Wireframes do Projeto**
 Os wireframes a seguir representam a estrutura básica das páginas do site, permitindo visualizar a organização do conteúdo antes da implementação.
+| **🏠 Home Page** | **📅 Programação** | **🎤 Palestrantes** |
+|----------------|-------------|--------------|
+| ![Home](img/pagina%20home%20-%20evento%20tech.png) | ![Programação](img/pagin%20programação%20-%20evento%20tech.png) | ![Palestrantes](img/pagina%20palestrantes%20-%20evento%20tech.png) |
 
-### **🏠 Home Page**
-<img src="img/pagina home - evento tech.png" alt="Pagina Home" width="800">
+| **📍 Localização** | **📝 Inscrição** |
+|-------------|-----------|
+| ![Localização](img/pagina%20de%20mapa%20-%20evento%20tech.png) | ![Inscrição](img/pagina%20de%20inscrição%20-%20evento%20tech.png) | 
 
-### **📅 Programação**
-<img src="img/pagin programação - evento tech.png" alt="Pagina Programação" width="800">
-
-### **🎤 Palestrantes**
-<img src="img/pagina palestrantes - evento tech.png" alt="Pagina Palestrantes" width="800">
-
-### **📍 Localização**
-<img src="img/pagina de mapa - evento tech.png" alt="Pagina Mapa" width="800">
-
-### **📝 Inscrição**
-<img src="img/pagina de inscrição - evento tech.png" alt="Pagina Incrição" width="800">
-
-###  **📍 Localização**
+###  **📍 Mapa do Site**
 <img src="img/Mapa do site.png" alt="Mapa do Site" width="800">
 
 ## **🎨 Paleta de Cores e Fontes**
@@ -74,6 +70,17 @@ Os wireframes a seguir representam a estrutura básica das páginas do site, per
 - ✨ **Títulos e Destaques**: [Poppins](https://fonts.google.com/specimen/Poppins)  
 - 📖 **Texto Geral**: [Roboto](https://fonts.google.com/specimen/Roboto)
 
+## **🖼 Imagens do Projeto Finalizado**
+Abaixo, imagens do site pronto:
+
+| Página Inicial | Programação | Palestrantes |
+|----------------|-------------|--------------|
+| ![Home](img/pagina%20home.png) | ![Programação](img/pagina%20programacao.png) | ![Palestrantes](img/pagina%20palestrantes.png) |
+
+| Localização | Inscrição |
+|-------------|-----------|
+| ![Localização](img/pagina%20localizacao.png) | ![Inscrição](img/pagina%20inscricao.png) |
+
 ## **⚙️ Funcionalidades Planejadas**
 - 📱 **Menu responsivo** com menu hamburguer para dispositivos móveis.
 - 🖼 **Galeria de fotos** de palestrantes e eventos anteriores com navegação.
@@ -89,15 +96,16 @@ Os wireframes a seguir representam a estrutura básica das páginas do site, per
 - 📌 **Figma** para a criação do wireframe e planejamento visual.
 - 📝 **Trello** para gerenciamento de tarefas e organização do projeto.
 
-## **📆 Próximos Passos**
-Com o planejamento definido, a próxima etapa será a implementação do layout inicial utilizando **HTML e CSS**.
-
 ## **👨‍💻 Autores**
 ### Equipe responsável pelo desenvolvimento do projeto.
 - Kaio Schobiner
 - Rogher Adriano Soares
 - Thiago Alexandre Bastos Emed
 
+---
+<br>Este documento foi atualizado com a versão final do projeto. Obrigado por acompanhar! 🚀
 
 ---
-Este documento será atualizado conforme o progresso do desenvolvimento do projeto. 🚀
+📝 Licença
+---
+Este projeto foi desenvolvido para fins educacionais.
