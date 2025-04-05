@@ -41,6 +41,7 @@ body {
     display: flex;
     gap: 32px;
     list-style: none;
+    z-index: 3;
 }
 .listaMenu a {
     font-size: 1.5rem;
@@ -107,7 +108,6 @@ body {
     height: 100%;
     width: 60%;
     background: rgba(224, 224, 224, 0.3);
-    padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 10px 15px -3px rgba(255, 255, 255, 0.5);
     border: 3px solid rgb(168, 85, 247);
@@ -197,7 +197,6 @@ td {
     width: 300px;
     height: 300px;
     float: left;
-    padding: 10px;
     text-align: center;
     background-color: rgba(244, 244, 244, 0.2);
     border-radius: 10px;
@@ -318,7 +317,6 @@ button {
     right: 0;
     transform: translateY(-50%);
     width: 300px;
-    padding: 20px;
     background-color: rgba(224, 224, 224, 0.2);
     box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
     z-index: 1;
@@ -412,19 +410,21 @@ footer {
 @media (max-width: 880px) {
     header {
         width: 100%;
+        padding: 0;
     }
 
     /* Menu hamburguer */
     .menuHamburguer {
         display: block;
         z-index: 10;
+        padding: 0;
     }
     .listaMenu {
         position: fixed;
         top: 0;
         right: 0;
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
         background: rgb(106, 13, 173);
         flex-direction: column;
         justify-content: space-around;
@@ -550,5 +550,10 @@ footer {
         margin-left: -150px;
         z-index: 1;
         margin-right: 0;
+    }
+    .Card, .CardFoto {
+        margin-left: 25px;
+        padding: 0;
+        padding-right: 5px;
     }
 }

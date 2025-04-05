@@ -13,6 +13,58 @@ body {
     background-size: cover;
     background-position: center;
 }
+/* Estilizando o menu de navegação */
+.icones {
+    height: 25px;
+    width: 25px;
+    padding-right: 5px;
+}
+.itemMenu {
+    text-decoration: none;
+    font-family: 'Poppins';
+    color: rgb(255, 255, 255);
+}
+
+.header {
+    background: rgb(106, 13, 173);
+    padding-inline: 16px;
+}
+.menu {
+    max-width: 1280px;
+    height: 70px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.listaMenu {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    z-index: 3;
+}
+.listaMenu a {
+    font-size: 1.5rem;
+    padding-block: 16px;
+}
+.menuHamburguer {
+    border: none;
+    background: none;
+    border-top: 3px solid rgb(255, 255, 255);
+    cursor: pointer;
+    display: none;
+}
+.menuHamburguer::before,
+.menuHamburguer::after {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: rgb(255, 255, 255);
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
+}
 
 /* Estilizando o Formulário */
 form {
@@ -33,7 +85,7 @@ form {
     margin-bottom: 100px;
     position: relative;
     background: rgba(224, 224, 224, 0.3);
-    padding: 20px;
+    padding: 10px;
     border-radius: 8px;
     box-shadow: 0px 10px 15px -3px rgba(255, 255, 255, 0.5);
     border: 3px solid rgb(168, 85, 247);
@@ -141,58 +193,7 @@ input:-webkit-autofill {
     text-align: center;
     justify-content: center;
 }
-/* Estilizando o menu de navegação */
-.icones {
-    height: 25px;
-    width: 25px;
-    padding-right: 5px;
-}
-.itemMenu {
-    text-decoration: none;
-    font-family: 'Poppins';
-    color: rgb(255, 255, 255);
-}
 
-.header {
-    background: rgb(106, 13, 173);
-    padding-inline: 16px;
-}
-.menu {
-    max-width: 1280px;
-    height: 70px;
-    margin-inline: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.listaMenu {
-    display: flex;
-    gap: 30px;
-    list-style: none;
-    z-index: 3;
-}
-.listaMenu a {
-    font-size: 1.5rem;
-    padding-block: 16px;
-}
-.menuHamburguer {
-    border: none;
-    background: none;
-    border-top: 3px solid rgb(255, 255, 255);
-    cursor: pointer;
-    display: none;
-}
-.menuHamburguer::before,
-.menuHamburguer::after {
-    content: " ";
-    display: block;
-    width: 30px;
-    height: 3px;
-    background: rgb(255, 255, 255);
-    margin-top: 5px;
-    position: relative;
-    transition: 0.3s;
-}
 
 /* Estilizando o conteudo da esquerda */
 #fotosEvento {
@@ -328,16 +329,19 @@ footer{
 
 /* Responsividade*/
 @media (max-width: 880px) {
+    header {
+        width: 100%;
+    }
     .menuHamburguer {
         display: block;
-        z-index: 1;
+        z-index: 10;
     }
     .listaMenu {
         position: fixed;
-        top: 50px;
+        top: 0;
         right: 0;
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
         background: rgb(106, 13, 173);
         flex-direction: column;
         justify-content: space-around;
@@ -347,6 +351,7 @@ footer{
         transition: 1s ease-out;
         pointer-events: none;
         border-radius: 30px;
+        z-index: 5;
     }
     .listaMenu a {
         font-size: 3rem;
