@@ -411,11 +411,9 @@ footer {
 /* Responsividade para telas pequenas */
 @media (max-width: 880px) {
     header {
-        width: 100vw;
+        width: 100%;
     }
-    nav {
-        width: 100vw;
-    }
+
     /* Menu hamburguer */
     .menuHamburguer {
         display: block;
@@ -425,8 +423,8 @@ footer {
         position: fixed;
         top: 0;
         right: 0;
-        width: 70vw;
-        height: 70vh;
+        width: 100vw;
+        height: 100vh;
         background: rgb(106, 13, 173);
         flex-direction: column;
         justify-content: space-around;
@@ -438,6 +436,7 @@ footer {
         z-index: 3;
         border-radius: 50px;
         box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2);
+        z-index: 5;
     }
     .listaMenu a {
         font-size: 3rem;
@@ -477,11 +476,7 @@ footer {
         transform: rotate(-135deg);
         top: -7px;
     }
-    .menu.active + main {
-        visibility: hidden;
-        opacity: 0;
-        transition: opacity 0.3s ease-out;
-    }
+
     .btnInscricao{
         justify-content: center;
     }   
