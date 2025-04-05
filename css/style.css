@@ -484,8 +484,10 @@ footer {
         width: 100%;
         align-items: center;
         margin: 0;
-        margin-left: 15px;
         margin-bottom: 10px;
+    }
+    .carrossel, .carrosselBaixo {
+        margin-right: 35px;
     }
     #esquerda h2 {
         font-size: 2.8rem;
@@ -552,8 +554,8 @@ footer {
         margin-right: 0;
     }
     .Card, .CardFoto {
-        margin-left: 25px;
+        margin-left: 15px;
         padding: 0;
-        padding-right: 5px;
+        padding-right: 30px;
     }
 }
