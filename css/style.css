@@ -195,7 +195,7 @@ td {
 /* Estilizando o conteudo da esquerda */
 #esquerda, #esquerdaBaixo {
     width: 300px;
-    height: 300px;
+    height: 320px;
     float: left;
     text-align: center;
     background-color: rgba(244, 244, 244, 0.2);
@@ -204,7 +204,7 @@ td {
     position: relative;
 }
 #esquerda {
-    height: 520px;
+    height: 533px;
 }
 #esquerdaBaixo {
     margin-top: 565px;
@@ -253,8 +253,9 @@ td {
 #esquerda h2, #esquerdaBaixo h2 {
     margin-bottom: 5px;
     font-size: 2em;
-    color: rgb(10, 116, 218);
+    color: rgb(250, 250, 250);
     text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    margin-top: 12px;
 }
 #esquerda h3 {
     font-family: 'Roboto';
@@ -326,14 +327,14 @@ button {
 #direita h2 {
     margin-bottom: 15px;
     font-size: 2rem;
-    color: rgb(10, 116, 218);
+    color: rgb(255, 255, 255);
     text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
 #direita p {
     font-family: 'Roboto';
     font-size: 2rem;
     font-weight: 500;
-    color: rgb(10, 116, 218);
+    color: rgb(255, 255, 255);
     text-shadow: 1px 1px 2px rgb(0, 0, 0);
     padding-top: 8px;
 }

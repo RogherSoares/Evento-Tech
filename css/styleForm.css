@@ -116,6 +116,10 @@ form {
     height: fit-content;
     box-shadow: 2px 2px 3px  rgba(255, 255, 255, 0.3);
 }
+.btnCadastro:hover {
+background: rgb(29, 138, 80);
+transition: 1.5s;
+}
 #inputContainer {
     display: grid;
     gap: 24px;

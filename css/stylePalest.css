@@ -90,10 +90,11 @@ main {
 }
 .card img {
     width: 250px;
-    height: 300px;
+    height: 400px;
     margin-right: 20px;
     border-radius: 20px;
     border: 2px solid rgb(30, 144, 255);
+    margin-top: 30px;
 }
 .card h3 {
     font-family: 'Poppins';
