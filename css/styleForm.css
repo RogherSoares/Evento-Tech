@@ -464,3 +464,15 @@ footer{
         font-size: 3rem;
     }
 }
+@media (max-width: 1366px) {
+    #formContainer {
+        margin-left: 330px;
+    }
+    #confirmationMessage {
+        height: 120px;
+    }
+    #infEvento {
+        margin: 0;
+        margin-top: 80px;
+    }
+}

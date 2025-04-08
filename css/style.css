@@ -559,3 +559,19 @@ footer {
         padding-right: 30px;
     }
 }
+@media (max-width: 1366px) {
+    #container {
+        width: 50%;
+    }
+    #cronograma {
+        display: flex;
+        flex-direction: column;
+    }
+    .conteudo h2, h3 {
+        margin: 20px;
+    }
+    #direita {
+        width: 330px;
+        margin: 0;
+    }
+}
