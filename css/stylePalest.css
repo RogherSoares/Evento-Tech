@@ -309,13 +309,3 @@ footer{
         height: 250px;
     }
 }
-
-/* Para telas grandes */
-@media (min-width: 1367px) {
-    .card {
-        width: 60%;
-    }
-    .card img {
-        height: 400px;
-    }
-}

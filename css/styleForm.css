@@ -507,13 +507,3 @@ footer{
         width: 50%;
     }
 }
-
-/* Para telas grandes */
-@media (min-width: 1367px) {
-    #formContainer {
-        width: 60%;
-    }
-    .btnCadastro {
-        width: 30%;
-    }
-}

@@ -605,13 +605,3 @@ footer {
         margin: 0;
     }
 }
-
-/* Para telas grandes */
-@media (min-width: 1367px) {
-    #container {
-        width: 62%;
-    }
-    .listaMenu a {
-        font-size: 1.8rem;
-    }
-}
