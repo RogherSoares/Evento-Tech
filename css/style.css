@@ -117,12 +117,12 @@ body {
     align-items: center;
     text-align: center;
     margin-left: 50px;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin: 30px;
     color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    text-shadow: 2px 2px 3px rgb(0, 0, 0);
     font-family: 'Roboto';
-    font-weight: 500;
+    font-weight: 400;
 }
 .imgConteudo img {
     width: 80%;
@@ -145,7 +145,7 @@ body {
 }
 #conteudo p {
     font-family: 'Roboto';
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: justify;
 }
 
@@ -410,7 +410,7 @@ footer {
 /* Responsividade para telas pequenas */
 @media (max-width: 880px) {
     header {
-        width: 100%;
+        width: 100vw;
         padding: 0;
     }
 
@@ -482,7 +482,7 @@ footer {
         justify-content: center;
     }   
     #esquerda, #esquerdaBaixo {
-        width: 100%;
+        width: 100vw;
         align-items: center;
         margin: 0;
         margin-bottom: 10px;
@@ -497,28 +497,31 @@ footer {
         font-size: 2.5rem;
     }
     #container {
-        width: 100%;
+        width: 100vw;
         align-items: center;
     }
     .conteudo {
-        width: 100%;
+        width: 100vw;
     }
     #container h1 {
         font-size: 3.5rem;
+        text-shadow: 2px 2px 3px rgb(0, 0, 0);
     }
     #container h2 {
         font-size: 2rem;
         text-align: center;
         margin: 5px;
+        text-shadow: 2px 2px 3px rgb(0, 0, 0);
     }
     #continer p {
-        font-size: 2rem;
+        font-size: 2.5rem;
+        text-shadow: 2px 2px 3px rgb(0, 0, 0);
     }
     .text-container{
         height: 50%;
     }
     #direita {
-        width: 100%;
+        width: 100vw;
         position: relative;
         bottom: 0;
         margin-top: 150px;
@@ -556,13 +559,13 @@ footer {
     }
     .Card, .CardFoto {
         margin-left: 15px;
+        margin-right: 15px;
         padding: 0;
-        padding-right: 30px;
     }
 }
-@media (max-width: 1366px) {
+@media (min-width: 890px) and (max-width: 1366px) {
     #container {
-        width: 50%;
+        width: 50vw;
     }
     #cronograma {
         display: flex;

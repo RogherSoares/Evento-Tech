@@ -468,7 +468,7 @@ footer{
         font-size: 3rem;
     }
 }
-@media (max-width: 1366px) {
+@media (min-width: 890px) and (max-width: 1366px) {
     #formContainer {
         margin-left: 330px;
     }

@@ -90,18 +90,18 @@ main {
 }
 .card img {
     width: 250px;
-    height: 400px;
+    height: 280px;
     margin-right: 20px;
     border-radius: 20px;
     border: 2px solid rgb(30, 144, 255);
-    margin-top: 30px;
+    margin-top: 10px;
 }
 .card h3 {
     font-family: 'Poppins';
     font-size: 3rem;
     text-align: center;
     color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    text-shadow: 2px 2px 3px rgb(0, 0, 0);
 
 }
 .card p {
@@ -110,7 +110,7 @@ main {
     font-weight: 400;
     text-align: justify;
     color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    text-shadow: 2px 2px 3px rgb(0, 0, 0);
 }
 
 /* Footer*/
@@ -272,7 +272,7 @@ footer{
         font-weight: 400;
     }
 }
-@media (max-width: 1366px) {
+@media (min-width: 890px) and (max-width: 1366px) {
     .card {
         height: 450px;
     }
