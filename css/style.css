@@ -12,6 +12,7 @@ body {
     background-image: url(wallpaper.png);
     background-size: cover;
     background-position: center;
+    overflow-x: hidden;
 }
 
 /* Estilizando o menu de navegação */
@@ -152,7 +153,7 @@ body {
 /* Tabela */
 #cronograma {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 16px;
     width: 100%;
     max-width: 1200px;
@@ -563,6 +564,31 @@ footer {
         padding: 0;
     }
 }
+
+/* Para dispositivos muito pequenos (smartphones antigos) */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+    #container {
+        width: 90%;
+        padding: 10px;
+    }
+    .listaMenu a {
+        font-size: 2rem;
+    }
+}
+
+/* Para tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+    #container {
+        width: 80%;
+    }
+    .listaMenu a {
+        font-size: 2.5rem;
+    }
+}
+
 @media (min-width: 890px) and (max-width: 1366px) {
     #container {
         width: 50vw;
@@ -577,5 +603,15 @@ footer {
     #direita {
         width: 330px;
         margin: 0;
+    }
+}
+
+/* Para telas grandes */
+@media (min-width: 1367px) {
+    #container {
+        width: 62%;
+    }
+    .listaMenu a {
+        font-size: 1.8rem;
     }
 }

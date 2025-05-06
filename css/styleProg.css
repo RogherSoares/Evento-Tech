@@ -251,7 +251,7 @@ footer{
     }
     .card {
         width: 100%;
-        height: 1100px;
+        height: 800px;
         display: flex;
         flex-direction: column;
         margin: 20px;
@@ -278,5 +278,43 @@ footer{
     .card img {
         height: 400px;
         margin-top: 60px;
+    }
+}
+
+/* Para dispositivos muito pequenos (smartphones antigos) */
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .card img {
+        height: 200px;
+    }
+    .card h3 {
+        font-size: 2.5rem;
+    }
+    .card p {
+        font-size: 1.5rem;
+    }
+}
+
+/* Para tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+    .card {
+        width: 90%;
+    }
+    .card img {
+        height: 250px;
+    }
+}
+
+/* Para telas grandes */
+@media (min-width: 1367px) {
+    .card {
+        width: 60%;
+    }
+    .card img {
+        height: 400px;
     }
 }
